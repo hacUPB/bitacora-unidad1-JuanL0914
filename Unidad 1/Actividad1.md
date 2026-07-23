@@ -85,4 +85,4 @@ M=-1
 M=M+1
 @READKEYBOARD
 0;JMP
-// este codigo cambia la pantalla en negro al presionar el espacio
+// este codigo cambia la pantalla en negro al presionar el espacio se ejecuta en bucle hatsa que se presione el espacio
