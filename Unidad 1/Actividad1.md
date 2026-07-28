@@ -1,4 +1,5 @@
 # Actividad 1
+``` 
 //EJC 1
 			@1
 			D=A
@@ -9,27 +10,32 @@
 (END)
 			@END
 			0;JMP
+```
 
 // EJC 2
+```
 @15
 D=A
 @VAR
 M=D
-
+```
 //EJC 3
+```
 @10
 D=A
 @i
 M=D
-
+```
 //EJC 4 
+```
 @i
 D=M
 @VAR
 D=D-M
-
+```
 
 //EJC 5
+```
 @1000
 D=A
 @i
@@ -46,8 +52,10 @@ M=M-1
 (CONT)
 @CONT
 0;JMP
+```
 
 //EJC 7
+```
 @SCREEN
 D=A
 @i
@@ -85,4 +93,5 @@ M=-1
 M=M+1
 @READKEYBOARD
 0;JMP
+```
 // este codigo cambia la pantalla en negro al presionar el espacio se ejecuta en bucle hasta que se presione el espacio
