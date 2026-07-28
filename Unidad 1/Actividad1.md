@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Unidad 1
 
 # Sesiones 1 y 2
@@ -21,31 +22,61 @@ RAM: Guarda los datos (resultados/variables), se lee y escribe constantemente mi
 
 
 # Actividad de clase 2
+=======
+# Actividad 1
+``` 
+//EJC 1
+			@1
+			D=A
+			@2
+			D=D+A
+			@16
+			M=D
+(END)
+			@END
+			0;JMP
+```
+
+// EJC 2
+>>>>>>> a083b1e35fec90f70eeb62b3e33deca147ba1404
 ```
 @15
 D=A
 @VAR
 M=D
 ```
+<<<<<<< HEAD
 Guarda el valor 15 en una variable llamada VAR
 # Actividad de clase 3
+=======
+//EJC 3
+>>>>>>> a083b1e35fec90f70eeb62b3e33deca147ba1404
 ```
 @10
 D=A
 @i
 M=D
 ```
+<<<<<<< HEAD
 guarda el valor 10 en una variable i
 # Actividad de clase 4
+=======
+//EJC 4 
+>>>>>>> a083b1e35fec90f70eeb62b3e33deca147ba1404
 ```
 @i
 D=M
 @VAR
 D=D-M
 ```
+<<<<<<< HEAD
 hace una resta
 
 # Actividad de clase 5
+=======
+
+//EJC 5
+>>>>>>> a083b1e35fec90f70eeb62b3e33deca147ba1404
 ```
 @1000
 D=A
@@ -64,11 +95,16 @@ M=M-1
 @CONT
 0;JMP
 ```
+<<<<<<< HEAD
 hace una cuenta regresiva del 1000 va restando 1 cada vuelta del bucle hasta que llega a 0 cuando llega a 0 salta a CONT donde se queda en un bucle infinito
 
 # Sesion 3 y 4
 
 # Actividad de clase 6
+=======
+
+//EJC 7
+>>>>>>> a083b1e35fec90f70eeb62b3e33deca147ba1404
 ```
 @SCREEN
 D=A
@@ -108,6 +144,10 @@ M=M+1
 @READKEYBOARD
 0;JMP
 ```
+<<<<<<< HEAD
 este codigo cambia la pantalla en negro al presionar el espacio se ejecuta en bucle hasta que se presione el espacio
 
 # 
+=======
+// este codigo cambia la pantalla en negro al presionar el espacio se ejecuta en bucle hasta que se presione el espacio
+>>>>>>> a083b1e35fec90f70eeb62b3e33deca147ba1404
