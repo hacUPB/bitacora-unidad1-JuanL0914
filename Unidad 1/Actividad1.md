@@ -207,4 +207,5 @@ M=-1
 ```
 ![.](<Captura de pantalla 2026-08-04 152813.png>)
 
-# Actividad 10: Linea en el medio de la pamtalla
+# Actividad 10: Linea en el medio de la pantalla
+
