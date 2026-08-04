@@ -139,7 +139,6 @@ este codigo cambia la pantalla en negro al presionar el espacio se ejecuta en bu
 
  (END)
  @END
- 0;JMP
- 
- ![alt text](image.png)
+ 0;JMP 
 ```
+ ![alt text](image.png)
