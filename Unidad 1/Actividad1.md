@@ -145,7 +145,7 @@ este codigo cambia la pantalla en negro al presionar el espacio se ejecuta en bu
  @END
  0;JMP 
 ```
-![Cuando 5 es >= a 10](<Captura de pantalla 2026-08-04 143759-1.png>)
+![Cuando 5 es >= a 10](<Captura de pantalla 2026-08-04 143759.png>)
 ![Cuando 5 es < a 10](<Captura de pantalla 2026-08-04 143929.png>)
 
 # Actividad 8
