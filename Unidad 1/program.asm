@@ -1,18 +1,9 @@
- @5
- D=M
- @10
- D=D-A
- @MENOR
- D;JLT
- @7
- M=0
- @END
- 0;JMP
+@SCREEN
+D=A
+@16348
+A=D
+M=-1
 
- (MENOR)
- @7
- M=1
-
- (END)
- @END
- 0;JMP
+(END)
+@END
+0;JMP
