@@ -121,6 +121,7 @@ M=M+1
 este codigo cambia la pantalla en negro al presionar el espacio se ejecuta en bucle hasta que se presione el espacio
 
 # Actividad 7: control de flujo con saltos
+```
  @5
  D=M
  @10
@@ -140,3 +141,5 @@ este codigo cambia la pantalla en negro al presionar el espacio se ejecuta en bu
  @END
  0;JMP
  
+ ![alt text](image.png)
+```
