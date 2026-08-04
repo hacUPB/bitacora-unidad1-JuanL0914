@@ -1,16 +1,18 @@
-@1000
-D=A
-@i
-M=D
-(LOOP)
-@i
-D=M
-@CONT
-D;JEQ
-@i
-M=M-1
-@LOOP
-0;JMP
-(CONT)
-@CONT
-0;JMP
+ @5
+ D=M
+ @10
+ D=D-A
+ @MENOR
+ D;JLT
+ @7
+ M=0
+ @END
+ 0;JMP
+
+ (MENOR)
+ @7
+ M=1
+
+ (END)
+ @END
+ 0;JMP
