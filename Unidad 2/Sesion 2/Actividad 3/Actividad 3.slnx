@@ -1,0 +1,17 @@
+<<<<<<< HEAD
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Actividad 3/Actividad 3.vcxproj" Id="dd26b0ef-a557-432c-8f4a-68550edaa32f" />
+</Solution>
+=======
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Actividad 3/Actividad 3.vcxproj" Id="dd26b0ef-a557-432c-8f4a-68550edaa32f" />
+</Solution>
+>>>>>>> e6d0c8cbce90c861edad4ee0151c7427e1167d78

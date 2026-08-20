@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\B09S112est\\Documents\\bitacora-unidad1-JuanL0914\\Unidad 2\\Sesion 4\\Actividad 9\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{644118C9-D622-49A8-93FA-9D461D775E23}|Actividad 9\\Actividad 9.vcxproj|C:\\Users\\B09S112est\\Documents\\bitacora-unidad1-JuanL0914\\Unidad 2\\Sesion 4\\Actividad 9\\Actividad 9\\Actividad 9.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{644118C9-D622-49A8-93FA-9D461D775E23}|Actividad 9\\Actividad 9.vcxproj|solutionrelative:Actividad 9\\Actividad 9.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Actividad 9.cpp",
+              "DocumentMoniker": "C:\\Users\\B09S112est\\Documents\\bitacora-unidad1-JuanL0914\\Unidad 2\\Sesion 4\\Actividad 9\\Actividad 9\\Actividad 9.cpp",
+              "RelativeDocumentMoniker": "Actividad 9\\Actividad 9.cpp",
+              "ToolTip": "C:\\Users\\B09S112est\\Documents\\bitacora-unidad1-JuanL0914\\Unidad 2\\Sesion 4\\Actividad 9\\Actividad 9\\Actividad 9.cpp",
+              "RelativeToolTip": "Actividad 9\\Actividad 9.cpp",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-20T19:37:09.541Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
