@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 <Solution>
   <Configurations>
     <Platform Name="x64" />
@@ -5,3 +6,12 @@
   </Configurations>
   <Project Path="Actividad 2/Actividad 2.vcxproj" Id="53822726-b86f-46ee-b750-0afd34f122bb" />
 </Solution>
+=======
+<Solution>
+  <Configurations>
+    <Platform Name="x64" />
+    <Platform Name="x86" />
+  </Configurations>
+  <Project Path="Actividad 2/Actividad 2.vcxproj" Id="53822726-b86f-46ee-b750-0afd34f122bb" />
+</Solution>
+>>>>>>> e6d0c8cbce90c861edad4ee0151c7427e1167d78
