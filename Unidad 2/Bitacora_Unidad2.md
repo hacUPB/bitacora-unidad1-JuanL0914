@@ -2,8 +2,8 @@
 Actividad 1 — Suma de dos enteros
 ```
 
-//Qué hace el código
-Define una función sum(a, b) que retorna la suma de dos enteros, y en main() la llama con a=5 y b=7, imprimiendo el resultado por consola. Es el ejemplo más básico: declarar una función, pasar parámetros por valor y usar cout.
+
+//Define una función sum(a, b) que retorna la suma de dos enteros, y en main() la llama con a=5 y b=7, imprimiendo el resultado por consola. Es el ejemplo más básico: declarar una función, pasar parámetros por valor y usar cout.
 
 #include <iostream>
 int sum(int a, int b) {
@@ -27,11 +27,9 @@ int main() {
 Actividad 2 — Paso de parámetros: valor, referencia y puntero
 ```
 
-// Qué hace el código
-Compara las tres formas de pasar un argumento a una función en C++:
-●	modificarPorValor(int n): recibe una copia; los cambios NO afectan a la variable original.
-●	modificarPorReferencia(int& n): recibe un alias de la variable original; los cambios SÍ se reflejan.
-●	modificarPorPuntero(int* n): recibe la dirección de memoria; usando *n se modifica el valor original.
+
+//Compara las tres formas de pasar un argumento a una función en C++
+
 #include <iostream>
 using namespace std;
  
@@ -81,8 +79,8 @@ int main() {
 Actividad 3 — Regiones de memoria (stack, heap, globales, estáticas, solo lectura)
  ```
 
-// Qué hace el código
-Imprime direcciones de memoria de distintos tipos de variables para visualizar en qué región vive cada una: variables locales (stack), variables globales inicializadas y no inicializadas, una constante de solo lectura, una variable static dentro de una función, y un arreglo reservado dinámicamente con new (heap), liberado al final con delete[].
+
+//Imprime direcciones de memoria de distintos tipos de variables para visualizar en qué región vive cada una: variables locales (stack), variables globales inicializadas y no inicializadas, una constante de solo lectura, una variable static dentro de una función, y un arreglo reservado dinámicamente con new (heap), liberado al final con delete[].
 Error a propósito #1 — conflicto de Git sin resolver
 El archivo tal como está en el repositorio contiene marcadores de conflicto de fusión (<<<<<<< HEAD, ======= y >>>>>>> ...) que nunca se resolvieron. Un marcador de conflicto es un carácter no válido en C++
 
