@@ -1,9 +1,10 @@
 
 Actividad 1 — Suma de dos enteros
 ```
-Ubicación: Unidad 2/Sesion1/Actividad1
-Qué hace el código
+
+//Qué hace el código
 Define una función sum(a, b) que retorna la suma de dos enteros, y en main() la llama con a=5 y b=7, imprimiendo el resultado por consola. Es el ejemplo más básico: declarar una función, pasar parámetros por valor y usar cout.
+
 #include <iostream>
 int sum(int a, int b) {
 	return a + b;
@@ -15,7 +16,9 @@ int main() {
 	std::cout << "La suma de " << a << " y " << b << " es " << sum(a, b) << "\n";
 }
 ```
-Compilación y ejecución
+
+<img width="967" height="51" alt="image" src="https://github.com/user-attachments/assets/ccc7ac97-6ee9-4e64-aa1e-7074f03bfd01" />
+
  
 
 ●	Resultado: 'La suma de 5 y 7 es 12' — correcto.
@@ -23,8 +26,8 @@ Compilación y ejecución
 
 Actividad 2 — Paso de parámetros: valor, referencia y puntero
 ```
-Ubicación: Unidad 2/Sesion1/Actividad 2
-Qué hace el código
+
+// Qué hace el código
 Compara las tres formas de pasar un argumento a una función en C++:
 ●	modificarPorValor(int n): recibe una copia; los cambios NO afectan a la variable original.
 ●	modificarPorReferencia(int& n): recibe un alias de la variable original; los cambios SÍ se reflejan.
@@ -70,24 +73,19 @@ int main() {
     return 0;
 }
 ```
-Compilación y ejecución
- 
-Captura: 'a' no cambia, pero 'b' y 'c' sí, confirmando la teoría de valor vs referencia/puntero.
+
+<img width="968" height="386" alt="image" src="https://github.com/user-attachments/assets/a1747e43-24e2-4d33-8620-3572a1106f63" />
+
 
 
 Actividad 3 — Regiones de memoria (stack, heap, globales, estáticas, solo lectura)
  ```
-Ubicación: Unidad 2/Sesion 2/Actividad 3
-Qué hace el código
+
+// Qué hace el código
 Imprime direcciones de memoria de distintos tipos de variables para visualizar en qué región vive cada una: variables locales (stack), variables globales inicializadas y no inicializadas, una constante de solo lectura, una variable static dentro de una función, y un arreglo reservado dinámicamente con new (heap), liberado al final con delete[].
 Error a propósito #1 — conflicto de Git sin resolver
-El archivo tal como está en el repositorio contiene marcadores de conflicto de fusión (<<<<<<< HEAD, ======= y >>>>>>> ...) que nunca se resolvieron. Un marcador de conflicto es un carácter no válido en C++, así que el compilador no llega ni siquiera a analizar el include de <iostream> correctamente: se genera una cascada de errores.
- 
-Error a propósito #2 — símbolos sueltos tras resolver el conflicto
-Al eliminar los marcadores y quedarnos con una sola versión del código, queda expuesta una segunda falla: la línea 'int a = 10; ++++' — los símbolos '++++' no forman una expresión válida y rompen el resto de la sentencia.
- 
-Captura: 'expected primary-expression before int' — causado por el '++++' residual.
-Código corregido
+El archivo tal como está en el repositorio contiene marcadores de conflicto de fusión (<<<<<<< HEAD, ======= y >>>>>>> ...) que nunca se resolvieron. Un marcador de conflicto es un carácter no válido en C++
+
 #include <iostream>
 #include <cstdlib>
 using namespace std;
@@ -141,18 +139,12 @@ int main() {
 }
 ```
  
-Compilación y ejecución (ya corregido)
- 
 
-●	Las direcciones de a, b y c (stack) están muy cerca entre sí y decrecen/crecen en bloques pequeños.
-●	global_inicializada y global_no_inicializada viven en una región distinta a la del stack.
-●	El array del heap (arrayHeap) tiene una dirección totalmente distinta, más alejada, típica del heap.
+ <img width="969" height="289" alt="image" src="https://github.com/user-attachments/assets/dc021286-b40a-4bfc-a7a0-75d195978fb0" />
+
  
 Actividad 4 — Experimentos de memoria (use-after-free)
 ```
-Ubicación: Unidad 2/Sesion 2/Actividad 4
-Qué hace el código
-El archivo contiene varios 'experimentos' comentados (escribir en la región de código, modificar una constante de solo lectura, tocar variables globales, static, etc.). El único bloque activo (EXPERIMENTO 6) reserva un arreglo en el heap con new, lo libera con delete[], y luego —a propósito— vuelve a leer arrayHeap[0], es decir, usa memoria ya liberada (use-after-free).
 //#include <iostream>
 //#include <cstdlib>
 //using namespace std;
@@ -294,23 +286,15 @@ int main() {    // Tamaño del arreglo dinámico
     /********************************************************/
     return 0;
 }
+
  
-Error a propósito — use-after-free (comportamiento indefinido)
-Al ejecutarlo normalmente, el programa no siempre 'truena': puede imprimir basura o incluso un valor que parece razonable, porque el sistema operativo todavía no reutilizó esa memoria. Esto es justamente lo peligroso del comportamiento indefinido: es errático.
- 
-Para demostrar el error de forma confiable se recompiló con AddressSanitizer (-fsanitize=address), una herramienta que sí detecta el acceso a memoria liberada:
- 
-●	freed by thread T0 here → línea del delete[] arrayHeap;
-●	previously allocated by thread T0 here → línea del new int[tam];
-●	READ of size 4 → la línea que causó el error: cout << arrayHeap[0];
 ```
 
  
 Actividad 5 — Copia de objetos (constructor de copia por defecto)
 ```
-Ubicación: Unidad 2/Sesion 2/Actividad 5
-Qué hace el código
-Define la clase Punto con constructor y destructor que imprimen mensajes. En main() se crea un objeto 'original', se copia en 'copia' (invocando el constructor de copia generado por el compilador) y se guarda un puntero p que apunta al mismo 'original'. Al modificar 'copia' y luego 'p->...', se observa la diferencia entre una copia independiente y un alias (puntero) al mismo objeto.
+//Define la clase Punto con constructor y destructor que imprimen mensajes. En main() se crea un objeto 'original', se copia en 'copia' (invocando el constructor de copia generado por el compilador) y se guarda un puntero p que apunta al mismo 'original'. Al modificar 'copia' y luego 'p->...', se observa la diferencia entre una copia independiente y un alias (puntero) al mismo objeto.
+
 // Actividad 5.cpp : Este archivo contiene la función "main". La ejecución del programa comienza y termina ahí.
 #include <iostream>
 #include <string>
@@ -352,7 +336,7 @@ int main() {    // Objeto original
     return 0;
 }
  ```
-Compilación y ejecución
+
  
 Actividad 6 — Ciclo de vida de un objeto en el stack
 ```
