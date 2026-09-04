@@ -334,13 +334,13 @@ int main() {    // Objeto original
     return 0;
 }
  ```
+<img width="969" height="252" alt="image" src="https://github.com/user-attachments/assets/f83a707e-2f17-4723-94c4-29f81a480636" />
 
  
 Actividad 6 — Ciclo de vida de un objeto en el stack
 ```
-Ubicación: Unidad 2/Sesion 3/Actividad 6
-Qué hace el código
-Crea un objeto Punto p(10, 20) en el stack (pensado para inspeccionarse con el depurador de Visual Studio, colocando un breakpoint). Al salir de main(), el destructor se llama automáticamente porque el objeto vive en el stack.
+
+//Crea un objeto Punto p(10, 20) en el stack (pensado para inspeccionarse con el depurador de Visual Studio, colocando un breakpoint). Al salir de main(), el destructor se llama automáticamente porque el objeto vive en el stack.
 #include <iostream>
 using namespace std;
 class Punto {
@@ -368,14 +368,13 @@ int main() {
 	return 0;
 }
 ```
-Compilación y ejecución
+<img width="969" height="94" alt="image" src="https://github.com/user-attachments/assets/ff650893-c298-41f8-b705-a898ecfd0624" />
+
  
  
 Actividad 7 — Objetos en stack vs. objetos en heap
 ```
-Ubicación: Unidad 2/Sesion 3/Actividad 7
-Qué hace el código
-Crea un objeto Punto en el stack (pStack) y otro en el heap con new (pHeap, accedido mediante un puntero). Se libera manualmente pHeap con delete. La diferencia clave: pStack se destruye solo al salir de main(); pHeap solo se destruye si el programador llama a delete explícitamente (si se olvida, hay fuga de memoria).
+//Crea un objeto Punto en el stack (pStack) y otro en el heap con new (pHeap, accedido mediante un puntero). Se libera manualmente pHeap con delete. La diferencia clave: pStack se destruye solo al salir de main(); pHeap solo se destruye si el programador llama a delete explícitamente (si se olvida, hay fuga de memoria).
 #include <iostream>
 using namespace std;
 class Punto {
@@ -408,12 +407,14 @@ int main() {
     delete pHeap;
     return 0;
 }
-Compilación y ejecución
+```
+<img width="969" height="150" alt="image" src="https://github.com/user-attachments/assets/5536656e-093d-49d1-97bf-877cad5de6ca" />
+
  
+
 Actividad 8 — Paso de objetos por valor (copias temporales)
-Ubicación: Unidad 2/Sesion 3/Actividad 8
-Qué hace el código
-La función cambiarNombre(Punto p, string nuevoNombre) recibe el objeto Punto por valor, es decir, trabaja sobre una copia temporal. Cambia el nombre de esa copia, pero el objeto 'original' en main() permanece intacto. Al terminar la función, la copia temporal se destruye (se ve el destructor extra en la salida).
+```
+//La función cambiarNombre(Punto p, string nuevoNombre) recibe el objeto Punto por valor, es decir, trabaja sobre una copia temporal. Cambia el nombre de esa copia, pero el objeto 'original' en main() permanece intacto. Al terminar la función, la copia temporal se destruye (se ve el destructor extra en la salida).
 #include <iostream>
 #include <string>
 using namespace std;
@@ -445,13 +446,12 @@ int main() {    // Objeto original
 	return 0;
 }
 ```
-Compilación y ejecución
+<img width="969" height="133" alt="image" src="https://github.com/user-attachments/assets/47f53b34-d139-42c1-9fd5-b6421a45dad3" />
+
  
 Actividad 9 — Miembros estáticos (compartidos entre instancias)
 ```
-Ubicación: Unidad 2/Sesion 4/Actividad 9
-Qué hace el código
-La clase Contador tiene un atributo de instancia 'valor' y un atributo static 'total', compartido por todos los objetos de la clase (una sola copia en memoria, no una por objeto). Cada vez que se construye un Contador, 'total' se incrementa. Se crean c1, c2 (en el stack) y c3 (dinámico, con new), y se observa cómo 'total' refleja el conteo global.
+// La clase Contador tiene un atributo de instancia 'valor' y un atributo static 'total', compartido por todos los objetos de la clase (una sola copia en memoria, no una por objeto). Cada vez que se construye un Contador, 'total' se incrementa. Se crean c1, c2 (en el stack) y c3 (dinámico, con new), y se observa cómo 'total' refleja el conteo global.
 #include <iostream>
 using namespace std;
 class Contador {
@@ -493,6 +493,7 @@ int main() {
     return 0;
 }
 ```
-Compilación y ejecución
+<img width="969" height="230" alt="image" src="https://github.com/user-attachments/assets/83358fed-dd47-4380-a150-8d07d4375f72" />
+
  
 
