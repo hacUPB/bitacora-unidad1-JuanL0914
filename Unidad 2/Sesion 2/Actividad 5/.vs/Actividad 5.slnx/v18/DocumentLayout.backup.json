@@ -1,0 +1,41 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\B09S112est\\Documents\\bitacora-unidad1-JuanL0914\\Unidad 2\\Sesion 2\\Actividad 5\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{AFB073BA-A2DB-454B-8731-CB476006EA3C}|Actividad 5\\Actividad 5.vcxproj|C:\\Users\\B09S112est\\Documents\\bitacora-unidad1-JuanL0914\\Unidad 2\\Sesion 2\\Actividad 5\\Actividad 5\\Actividad 5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}",
+      "RelativeMoniker": "D:0:0:{AFB073BA-A2DB-454B-8731-CB476006EA3C}|Actividad 5\\Actividad 5.vcxproj|solutionrelative:Actividad 5\\Actividad 5.cpp||{D0E1A5C6-B359-4E41-9B60-3365922C2A22}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{75188d03-9892-4ae2-abf1-207126247ce5}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Actividad 5.cpp",
+              "DocumentMoniker": "C:\\Users\\B09S112est\\Documents\\bitacora-unidad1-JuanL0914\\Unidad 2\\Sesion 2\\Actividad 5\\Actividad 5\\Actividad 5.cpp",
+              "RelativeDocumentMoniker": "Actividad 5\\Actividad 5.cpp",
+              "ToolTip": "C:\\Users\\B09S112est\\Documents\\bitacora-unidad1-JuanL0914\\Unidad 2\\Sesion 2\\Actividad 5\\Actividad 5\\Actividad 5.cpp",
+              "RelativeToolTip": "Actividad 5\\Actividad 5.cpp",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACcAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000677|",
+              "WhenOpened": "2026-08-20T19:22:38.514Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

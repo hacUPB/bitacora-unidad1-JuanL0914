@@ -1,0 +1,9 @@
+@SCREEN
+D=A
+@16348
+A=D
+M=-1
+
+(END)
+@END
+0;JMP
