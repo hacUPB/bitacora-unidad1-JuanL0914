@@ -12,3 +12,9 @@ Cuando explota por el maximo de 15 pixeles o cuando age sea mayo igual a lifetim
 
 Cuando le das al espacio generando 1000 esferas y cuando le das a la "s" sacando captura de pantalla![alt text](image-2.png)
 ![alt text](screenshot_142337.png) ![alt text](screenshot_142772.png) ![alt text](screenshot_142879.png) ![alt text](screenshot_142000.png)
+
+## Actividad 3
+
+## Actividad 4
+
+## Actividad 5
