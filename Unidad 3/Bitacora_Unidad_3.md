@@ -24,7 +24,12 @@ Una clase derivada solo reemplaza en _vfptr las entradas de los metodos que sobr
 
 
 
-## Actividad 4
+## Actividad 4 (Encasuplamiento)
+### ¿Qué sucede al ejecutar el codigo?
+al ejecutar el codigo no sucede nada pero cuando descomento las 2 lineas ocurren 4 errores 2 repetidos con diferente codigo lo que pasa es que hay variables protegidas o privadas lo que ```main()``` no puede acceder a esas variables. ![alt text](image-4.png)
+### ¿Porque sucede esto?
+Porque las variables estan protegidas y privatizadas.
+### Conclusion
 
 ## Actividad 5
 
