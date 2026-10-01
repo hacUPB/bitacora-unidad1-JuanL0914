@@ -25,14 +25,35 @@ Una clase derivada solo reemplaza en _vfptr las entradas de los metodos que sobr
 
 
 ## Actividad 4 (Encasuplamiento)
-### ¿Qué sucede al ejecutar el codigo?
+
+### 1.  ¿Qué sucede al ejecutar el codigo?
 al ejecutar el codigo no sucede nada pero cuando descomento las 2 lineas ocurren 4 errores 2 repetidos con diferente codigo lo que pasa es que hay variables protegidas o privadas lo que ```main()``` no puede acceder a esas variables. ![alt text](image-4.png)
 ### ¿Porque sucede esto?
 Porque las variables estan protegidas y privatizadas.
 ### Conclusion
+el encapsulamiento en C++ es una regla que el compilador aplica en tiempo de compilacion segun quien intenta acceder al miembro y desde donde no depende del contenido ni de la posicion en memoria, sino del contexto del codigo que hace la llamada
+### 2. ¿Que pasa?
+El codigo imprimio que que ```MyClass::secret1``` no tiene acceso al ```private``` ![alt text](image-5.png)
 
-## Actividad 5
+Y Cuando ejecute el segundo codigo funciono perfectamente porque ```reinterpret_cast``` es una forma de saltarse el sistema de tipos y acceso del compilador. Esto demuestra que el encasuplamiento realmente no existe en la memoria a pesar que este ahi escrito. ![alt text](image-7.png)
+### Conclusion
+El uso de ```reinterpret_cast``` junto con aritmetica de punteros permite traspasar la restriccion de acceso ```private```, porque reinterpreta la direccion de memoria del objeto como si fuera de otro tipo, evadiendo el chequeo de acceso que el compilador aplica normalmente cuando se accede por el nombre del campo a traves del tipo original de la clase.
+### ¿Qué es el encapsulamiento? ¿Por qué es importante?
+Es el que declara una variable como ```private, public, protected``` es importante para decir cuando se lee y cuando no la informacion
+## Actividad 5 (Herencia)
+### ¿Qué puedes observar?
+AL expandir el objeto ```CircularExplosion``` en el depurador se ve que esta compuesto por capas anidadas que reflejan exactamente su jerarquia de herencia primero sale ```Particle``` la clase base que tiene el puntero ```_vfptr```, despues esta ```Explosionparticle``` con sus propios campos ```Position, Velocity, color, age, lifetime, size``` por ultimo esta ```CircularExplosion```, que no agrega campos nuevos, solo reemplaza el comportamiento de ```draw()```
+### ¿Qué información te proporciona el depurador?
+El depurador muestra la estructura interna del objeto en la memoria.
 
-## Actividad 6
+### Conclusion
+El campo de la clase ```CircularExplosion``` es una clase que hereda de ```ExplosionParticle``` que hereda de ```Particle``` que vendria ser la clase base y es a travez de el polimorfismo tambien presentado en ```_vtable``` podemos tener subclases como ```CircularExplosion``` y ```StarExplosion```
+![alt text](image-8.png)
+
+### Herencia multiple (Experimento)
+![alt text](image-9.png)
+## Actividad 6 (Polimorfismo)
+Cada Objeto de la subclase guarda un ```vptr``` oculto el puntero apunta a la ``` vtable``` de su clase donde la funcion de ```particles``` y ```update``` se traduce a leer el puntero del objeto ubicar la posicion de update y saltar a esa direccion lo que seria un despacho dinamico esto gracias a virtual que genera el polimorfismo que genera los 3 tipos de explosiones durante la ejecucion.
+![alt text](image-10.png)
 
 ## Actividad 7
